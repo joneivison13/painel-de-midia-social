@@ -1,0 +1,80 @@
+.headeTitle{
+    font-size: 30px;
+    font-weight: bolder;
+    text-align: left;
+}
+header{
+    width: 100%;
+}
+header, .container1{
+    /* padding-left: 150px; */
+    padding: 20px 10%;
+    padding-right: 0;
+}
+.container1{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.card{
+    width: 265px;
+    max-width: 265px;
+    height: 190px;
+    max-height: 190px;
+    background-color: #ddd;
+    margin: 20px 15px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border-radius: 7px;
+}
+
+
+.name{
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+.name small{
+    margin: 7px;
+    font-weight: bolder;
+}
+
+.followers{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.folloewrs-number{
+    font-size: 35px;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+.follow{
+    color: rgb(126, 126, 126);
+    font-size: 15px;
+    margin: 5px;
+}
+.facebook{
+    border-top: 4px solid #0055ff;
+}
+.twiter{
+    border-top:4px solid #2AA9E0;
+}
+.instagran{
+    border-top:4px solid #CB005A;
+}
+.youtube{
+    border-top:4px solid #f00;
+}
+
+@media (max-width:1180px){
+    .card{
+        width: 100%;
+        max-width: 40%;
+    }
+}
