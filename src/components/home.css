@@ -4,17 +4,13 @@
     text-align: left;
 }
 header{
-    width: 100%;
-}
-header, .container1{
-    /* padding-left: 150px; */
-    padding: 20px 10%;
-    padding-right: 0;
+    margin:0 8%;
 }
 .container1{
     width: 100%;
     display: flex;
     flex-direction: column;
+    margin-left: 8%;
 }
 
 .card{
@@ -31,7 +27,6 @@ header, .container1{
     border-radius: 7px;
 }
 
-
 .name{
     display: flex;
     flex-direction: row;
@@ -46,6 +41,10 @@ header, .container1{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    max-width: 89%;
 }
 
 .folloewrs-number{
@@ -76,5 +75,24 @@ header, .container1{
     .card{
         width: 100%;
         max-width: 40%;
+    }
+}
+
+@media (max-width:1330px){
+    .card{
+        width: 100%;
+        max-width: 40%;
+    }
+}
+@media(max-width:638px){
+    .card{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        max-width: 90%;
+        margin: 20px 5%;
+    }
+    .folloewrs-number{
+        margin: 10px 0;
     }
 }

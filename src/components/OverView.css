@@ -1,14 +1,17 @@
 .container{
-    margin: 20px 10%;
+    margin: 20px 8%;
     display: flex;
     flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 100%;
 }
 .headeTitle2{
     font-size: 30px;
     font-weight: bolder;
     text-align: left;
     color: rgb(104, 104, 104);
-    margin: 20px 150px;
+    margin:20px 8%;
 }
 
 .view-card{
@@ -39,12 +42,29 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    flex-wrap: wrap;
+    width: 100%;
+    max-width: 89%;
+}
+@media (max-width:1330px){
+    .view-card{
+        width: 100%;
+        max-width: 40%;
+    }
 }
 
-@media ( max-width:1107px ){
+@media(max-width:638px){
     .view-card{
-        width: 40%;
-        max-width: 40%;
+        display: block;
+        width: 100%;
+        max-width: 90%;
+        margin: 20px 5%;
+        padding:10px 40px;
+    }
+    header{
+        padding-bottom: 15px;
+        border-bottom: 2px solid rgba(170, 170, 170, 0.867);
+    }
+    .headeTitle2{
+        margin-left: 50px;
     }
 }
